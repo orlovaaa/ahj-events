@@ -1,0 +1,88 @@
+body {
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 0;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.hole-game {
+  width: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0px auto;
+  cursor: url(../img/molotok.png), pointer;
+}
+
+.status {
+  margin-bottom: 20px;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px auto;
+  
+}
+
+.status div {
+  margin: 0 30px;
+  padding: 5px 9px;
+  border-radius: 33px;
+  background: rgb(123 161 142 / 36%);
+  font-size: 18px;
+} 
+
+.hole {
+  width: 70px;
+  height: 70px;
+  margin: 0 5px 15px;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: darkslategrey;
+}
+
+.hole:active {
+cursor: url(../img/molotok_mirrored.png), auto;
+}
+
+.hole_has-goblin {
+  background-image: url(../img/goblin.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.button-clear-stat {
+  margin: 15px auto ;
+  display: block;
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 20px;
+  border-radius: 15px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.gameOver {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  display: none;
+  width: 100%;
+  height: 46%;
+  font-family: fantasy,Arial,sans-serif;
+  font-size: 28px;
+  background-color: rgba(35, 37, 37, 0.977);
+  color: rgb(255, 255, 255);
+  letter-spacing: 2px;
+  min-width: 34%;
+  max-width: 14%;
+}
